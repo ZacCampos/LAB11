@@ -33,7 +33,7 @@ int main()
 	* -------------------------------------------------------------------------
 	* OUTPUT - USED FOR CLASS HEADING, PI, ALIGNMENT
 	* -------------------------------------------------------------------------
-	* PROGRAMMERS	: Programmers' Names
+	* PROGRAMMERS		: Programmers' Names
 	* CLASS			: Students' Course
 	* SECTION		: Class Days and Times
 	* LAB_NUM		: Lab Number (specific to this lab)
@@ -42,12 +42,12 @@ int main()
 	const char	PROGRAMMERS[]	= "Zac Campos & Sebastian Hooshmand";
 	const char	CLASS[]		= "CS1A";
 	const char	SECTION[]	= "MW: 8am";
-	const int	LAB_NUM		= 5;
-	const char	LAB_NAME[]	= "Eclipse Tutorial";
+	const int	LAB_NUM		= 11;
+	const char	LAB_NAME[]	= "Ouput - Geometry";
 	const float	PI		= 3.14159;
 	const int	ALIGN		= 34;
 	
-	// variable declarations go here
+	// Input and calculation variables
 	float height			= 0;
 	float base			= 0;
 	float areaOfTriangle		= 0;
