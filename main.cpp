@@ -1,6 +1,6 @@
 /*******************************************************************************
 * AUTHORS		: Zac Campos & Sebastian Hooshmand
-* STUDENT ID	: 1058476 
+* STUDENT ID		: 1058476 
 * LAB #11		: Output - Geometry
 * CLASS			: CS1A
 * SECTION		: MW 8am
@@ -18,8 +18,8 @@ using namespace std;
 * and circle with dimensions inputted by the user.
 * -----------------------------------------------------------------------------
 * INPUT:
-* 		<Height and base of the triangle, width and height of the rectangle,
-* 		and the radius of the circle.>
+* 	<Height and base of the triangle, width and height of the rectangle,
+* 	and the radius of the circle.>
 *
 * OUTPUT:
 * 	<This program will output the area and perimeter of each of the objects>
@@ -39,27 +39,27 @@ int main()
 	* LAB_NUM		: Lab Number (specific to this lab)
 	* LAB_NAME		: Title of the Lab
 	**************************************************************************/
-	const char		PROGRAMMERS[]= "Zac Campos & Sebastian Hooshmand";
-	const char		CLASS[]		= "CS1A";
-	const char		SECTION[]	= "MW: 8am";
-	const int		LAB_NUM		= 5;
-	const char		LAB_NAME[]	= "Eclipse Tutorial";
-	const float		PI			= 3.14159;
-	const int		ALIGN		= 34;
+	const char	PROGRAMMERS[]	= "Zac Campos & Sebastian Hooshmand";
+	const char	CLASS[]		= "CS1A";
+	const char	SECTION[]	= "MW: 8am";
+	const int	LAB_NUM		= 5;
+	const char	LAB_NAME[]	= "Eclipse Tutorial";
+	const float	PI		= 3.14159;
+	const int	ALIGN		= 34;
 	
 	// variable declarations go here
-	float height				= 0;
-	float base					= 0;
+	float height			= 0;
+	float base			= 0;
 	float areaOfTriangle		= 0;
 	float perimeterOfTriangle	= 0;
 
-	float width					= 0;
-	float heightRect			= 0;
+	float width			= 0;
+	float heightRect		= 0;
 	float areaOfRectangle		= 0;
 	float perimeterOfRectangle	= 0;
 
-	float radius				= 0;
-	float areaOfCircle			= 0;
+	float radius			= 0;
+	float areaOfCircle		= 0;
 	float circumferenceOfCircle	= 0;
 
 
@@ -90,7 +90,7 @@ int main()
 	**************************************************************************/
 	areaOfTriangle		= (height * base) / 2;
 
-	perimeterOfTriangle = base * 3;
+	perimeterOfTriangle 	= base * 3;
 
 	/***************************************************************************
 	* OUTPUT - Outputs the area and perimeter of the triangle
@@ -116,7 +116,7 @@ int main()
 	/***************************************************************************
 	* PROCESSING - Computes the  area and perimeter of rectangle
 	**************************************************************************/
-	areaOfRectangle			= width * heightRect;
+	areaOfRectangle		= width * heightRect;
 
 	perimeterOfRectangle	= (width + heightRect) * 2;
 
@@ -141,7 +141,7 @@ int main()
 	/***************************************************************************
 	* PROCESSING - Computes the area and circumference of circle
 	**************************************************************************/
-	areaOfCircle			= PI * radius * radius;
+	areaOfCircle		= PI * radius * radius;
 
 	circumferenceOfCircle	= PI * radius * 2;
 
@@ -162,19 +162,19 @@ int main()
 	**************************************************************************/
 	cout << left;
 	cout << setw(ALIGN) << "Enter the height of the triangle:";
-	cin >> height;
+	cin  >> height;
 
 	cout << setw(ALIGN) << "Enter the base of the triangle:";
-	cin >> base;
+	cin  >> base;
 
 	cout << endl;
 
 	/***************************************************************************
 	* PROCESSING - Computes the area and perimeter of triangle
 	**************************************************************************/
-	areaOfTriangle = (height * base) / 2;
+	areaOfTriangle 		= (height * base) / 2;
 
-	perimeterOfTriangle = base * 3;
+	perimeterOfTriangle 	= base * 3;
 
 	/***************************************************************************
 	* OUTPUT - Outputs the area and perimeter of the triangle
@@ -190,19 +190,19 @@ int main()
 	**************************************************************************/
 	cout << left;
 	cout << setw(ALIGN + 1) << "Enter the width of the rectangle: ";
-	cin >> width;
+	cin  >> width;
 
 	cout << setw(ALIGN + 1) << "Enter the height of the rectangle: ";
-	cin >> heightRect;
+	cin  >> heightRect;
 
 	cout << endl;
 
 	/***************************************************************************
 	* PROCESSING - Computes the  area and perimeter of rectangle
 	**************************************************************************/
-	areaOfRectangle = width * heightRect;
+	areaOfRectangle 	= width * heightRect;
 
-	perimeterOfRectangle = (width + heightRect) * 2;
+	perimeterOfRectangle 	= (width + heightRect) * 2;
 
 	/***************************************************************************
 	* OUTPUT - Outputs the area and perimeter of rectangle
@@ -218,16 +218,16 @@ int main()
 	**************************************************************************/
 	cout << left;
 	cout << setw(ALIGN - 2) << "Enter the radius of the circle: ";
-	cin >> radius;
+	cin  >> radius;
 
 	cout << endl;
 
 	/***************************************************************************
 	* PROCESSING - Computes the area and circumference of circle
 	**************************************************************************/
-	areaOfCircle = PI * radius * radius;
+	areaOfCircle 		= PI * radius * radius;
 
-	circumferenceOfCircle = PI * radius * 2;
+	circumferenceOfCircle 	= PI * radius * 2;
 
 	/***************************************************************************
 	* OUTPUT - Outputs the area and circumference of circle
@@ -237,9 +237,7 @@ int main()
 	cout << setw(9) << "Area" << setw(18) << "Circumference" << endl;
 	cout << setw(9) << areaOfCircle << setw(18) << circumferenceOfCircle;
 
-	int a = 0;
-
-	cin >> a;
-
+	cout << right;
+	
 	return 0;
 }
